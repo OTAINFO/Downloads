@@ -1,0 +1,65 @@
+Project Name: Hardware Abstraction Layer (HAL) for Arduino Nano RP2040 Connect
+
+Table of Contents:
+
+1. Introduction
+
+2. Features
+
+3. Installation
+
+4. Usage
+
+5. License
+
+
+
+1. Introduction
+
+	Unlike web, mobile, or desktop applications, IoT software development demands deep expertise in porting applications tovarious RTOS and hardware platforms. Typically, this process can take anywhere from one to six months. OTAinfo drastically reduces this timeline to just a few hours or days.
+
+With OTAinfo, developers can maintain consistent function calls across different hardware, regardless of the underlyingRTOS. Our solution dynamically provides environment-specific libraries, streamlining the porting process and making IoTsoftware development more efficient and scalable.
+
+2. Features
+
+	Imagine a printf function that remains consistent across any OS. In IoT software development, this concept extends to agreater complexity—not just limited resources, but the variety of chipsets.
+
+What if sensors from different manufacturers could be accessed with the same function call? This would significantly expand functionality across all existing boards, enabling true flexibility and scalability.
+
+The OTAinfo library offers:
+
+	Abstracted Communication Layers – Seamlessly manage different connectivity protocols.
+	Abstracted Sensor Layers – Use sensors from different manufacturers with uniform function calls.
+	Built-in AI Engine – Enhance device performance with real-time intelligence.
+	Integrated Self-Defense – Robust security features to protect against vulnerabilities.
+        Detect circular motion or Jumps using in built moderately tuned models (included in this bundle)
+
+With OTAinfo, IoT developers can simplify hardware integration, boost scalability, and unlock the full potential of their devices.
+
+
+3. Installation
+     Pre-requisites:
+     	1. Arduino IDE setup for Arduino Nano RP2040 Connect
+        2. Arduino Nano RP2040 Connect is able to execute blink example
+
+    Install Libraries
+	1. Arduino_LSM6DSOX Library for Arduino
+        2. WiFiNINA
+    Complete secrets.h with proper wifi values
+    Note: The .h files from otainfo_library and secrets.h file may need to be copied in project folder.
+    Compile the sample code and deploy it on device. It will automatically start running the functions.
+    Using the knowledge from sample code, update the application which needs IoT hardware abstraction. 
+    Once done, it can be now ported to OTAinfo listed devices with minor or no change with respective 
+    OTAinfo libraries. Yay!!
+
+   
+
+4. Usage
+       
+    The sample code explains the functionalilty of the library.
+
+5. License
+
+    The OTAinfo Library (otainfo_library directory) is the proprietary work of OTAinfo, Inc. Users are permitted to use the object file solely for development and proof of concept purposes. No additional rights are granted by OTAinfo,Inc.
+
+ All other directories are subject to their respective licenses.
