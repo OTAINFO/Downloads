@@ -78,7 +78,7 @@ Follow the main.c code to call respective functions from your application code.
 
 In sample/main/main.c function my_http_callback will fetch the response and status code. The repose is limited to 1024 bytes.
 
-## What does OTAinfo collect on OTAinfo cloud after each API call
+## What does OTAinfo collect on OTAinfo cloud after each API call for this version
 
 Data: {"deviceid":"EC:64:C9:90:A7:AC","devicetype":{"make":"ESP32","model":1,"features":50,"cores":2,"revision":301,"mac":"EC:64:C9:90:A7:AC"}}
 
