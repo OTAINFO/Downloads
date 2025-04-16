@@ -4,4 +4,4 @@ or
 [Contact us](https://join.slack.com/t/hal-fpo6396/shared_invite/zt-2swttq21s-IBozsESCoDnMt2N3QYRKRg)
 
 
-For ESP-IDF HAL, please standby to get the samples out. They are in progress and expected to be out soon. The object files define (a) OTA updates and (b) Rest API calls
+For ESP-IDF HAL are published. The object files define (a) OTA updates and (b) Rest API calls
