@@ -237,8 +237,40 @@ I (14188) main_task: Returned from app_main()
      };
 
 
+## How to make an https call?
+
+HTTPCallRequirements strcuture has member call certificate.
+
+const char root_cert_pem_start[] = R"EOF(
+
+-----BEGIN CERTIFICATE-----
+
+...
+
+...
+
+-----END CERTIFICATE-----
+
+)EOF";
 
 
+ HTTPCallRequirements httpdata = {
+ 
+          .url =  "https://<url>:9000/",
+
+          .url_port = 9000,
+
+          .protocol = "https",
+
+          ..
+
+          ..
+
+          .certificate = root_cert_pem_start,
+
+          ..
+
+          };
  
 
 
