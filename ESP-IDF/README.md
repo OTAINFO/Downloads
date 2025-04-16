@@ -74,6 +74,54 @@ Step 6: idf.py monitor
 
 Follow the main.c code to call respective functions from your application code. 
 
+## http(s) callback function
+
+In sample/main/main.c function my_http_callback will fetch the response and status code. The repose is limited to 1024 bytes.
+
+## Sample output ( may differ based on usecase )
+
+I (6108) WiFi: Response in calling app: 65535
+I (6108) OPC: Partition Label: nvs
+I (6118) OPC: Partition Type: Data
+I (6118) OPC: partition subtype:  0x00000002
+I (6118) OPC: partition address: 0x00009000
+I (6128) OPC: Partition size: 16384 bytes
+I (6128) OPC: Partition Label: otadata
+I (6138) OPC: Partition Type: Data
+I (6138) OPC: partition subtype:  0x00000000
+I (6138) OPC: partition address: 0x0000e000
+I (6148) OPC: Partition size: 8192 bytes
+I (6148) OPC: Partition Label: app0
+I (6148) OPC: Partition Type: App
+I (6158) OPC: APP partition found...
+I (6158) OPC: partition subtype:  0x00000010
+I (6158) OPC: partition address: 0x00010000
+I (6168) OPC: Partition size: 1310720 bytes
+I (6168) OPC: Partition Label: app1
+I (6178) OPC: Partition Type: App
+I (6178) OPC: APP partition found...
+I (6178) OPC: 
+OTA updates are possible
+I (7598) HTTPS_CALL: Payload: {"deviceid":"EC:64:C9:90:A7:AC","devicetype":{"make":"ESP32","model":1,"features":50,"cores":2,"revision":301,"mac":"EC:64:C9:90:A7:AC"}}
+I (8508) HTTPS_CALL: HTTP_EVENT_ON_CONNECTED
+I (8518) HTTPS_CALL: HTTP_EVENT_HEADER_SENT
+I (8828) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Allow, value=GET, POST, HEAD, OPTIONS
+I (8828) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json
+I (8838) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 16 Apr 2025 05:36:49 GMT
+I (8848) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Server, value=WSGIServer/0.1 Python/2.7.18
+I (8848) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept
+I (8858) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=X-Frame-Options, value=SAMEORIGIN
+I (8868) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Content-Length, value=43
+I (8868) HTTPS_CALL: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive
+I (8878) HTTPS_CALL: HTTP_EVENT_ON_DATA, len=43
+I (8878) HTTPS_CALL: HTTP_EVENT_ON_FINISH
+I (8888) HTTPS_CALL: Full Response:{"message":"Record created","success":true}
+
+I (8888) HTTPS_CALL: status of /hb: 200
+I (14188) GRP: Currently running partition: app0 at 0x10000
+
+I (14188) main_task: Returned from app_main()
+
 
  
 
