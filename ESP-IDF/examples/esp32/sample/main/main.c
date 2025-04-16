@@ -113,8 +113,8 @@ void app_main(void)
 
     ESP_ERROR_CHECK(ret);
 
-    char ssid[] = "test_iot";
-    char pass[] = "Test123$56";
+    char ssid[] = "ssid";
+    char pass[] = "password";
     connect(ssid, pass);
     vTaskDelay(pdMS_TO_TICKS(3000));
     check_panic();
