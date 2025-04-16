@@ -167,6 +167,41 @@ I (14188) GRP: Currently running partition: app0 at 0x10000
 I (14188) main_task: Returned from app_main()
 
 
+
+# Production version
+
+## OTAinfo Analytics
+
+### Metrics:
+
+1. Customer defined
+2. Update progress
+3. Operation success
+4. Resources usage
+5. Device security data
+6. Pre and Post update test data
+7. Environment based performance data like location, connectivity strength, weather etc.
+
+### AI based ticketing and automated issue fixing
+
+1. Metrics' data is processed through an AI engine to generate issue tickets
+2. These tickets are clubbed together on basis of common issues
+3. Analyzed and a fix is generated (manual/automatic) and applied
+4. Cloud to device 1-1 connectivity possible under certain device environments
+
+### Secured OTA Updates for firmware, data and configuration files
+
+1. For security OTAinfo uses Uptane standard
+2. Finds the next update, prepares a sequence (if multiple chips need to be updated) & applies it
+3. Runs post update test to confirm success before turning it to the new version
+4. Rolls back if update fails
+
+
+
+
+
+
+
  
 
 
