@@ -132,7 +132,7 @@ void app_main(void)
              .value = "-"}},
         .status = 0,
         .method = "GET",
-        .uri = "/api-token-auth/",
+        .uri = "api-token-auth/",
         .payload = "{\"username\" : \"\", \"password\" : \"\"}",
         .retries = 2,
         .response = "",
