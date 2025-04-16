@@ -201,22 +201,39 @@ I (14188) main_task: Returned from app_main()
 
 
  HTTPCallRequirements httpdata = {
+ 
           .url =  "http://<url>:8000/", (url with port)
+          
           .url_port = "8000",  (specifiy port again)
+          
           .protocol = "http",  (http/https)
+          
           .header = {
+          
             {.key = "Content-Type",
+            
              .value = "application/json"},
+             
             {.key = "X-Request-Source",
+            
              .value = "ESP-IDF"},
+             
             {.key = "-",    (takes maximum of 5 headers. If giving less than five, add this as the last key/value)
+            
              .value = "-"}},  
+             
         .status = 0,
+        
         .method = "GET",
+        
         .uri = "api-token-auth/",  (uri must not start with a '/')
+        
         .payload = "{\"username\" : \"\", \"password\" : \"\"}",
+        
         .retries = 2,
+        
         .response = "",
+        
      };
 
 
