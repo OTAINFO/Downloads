@@ -7,3 +7,5 @@ The sample code monitors heap_largest_free_block, free_heap_size and wifi_rssi (
 It will give individual warning based on which of these 3 parameters are low.
 
 To use the raw model, checkout [esp32-process-success-predictor](https://huggingface.co/otainfo/esp32-process-success-predictor/blob/main/README.md)
+
+For more information [contact us](https://join.slack.com/t/hal-fpo6396/shared_invite/zt-2swttq21s-IBozsESCoDnMt2N3QYRKRg)
