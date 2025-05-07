@@ -1,4 +1,5 @@
-.bin file can be deployed directly on ESP32 to check the execution
+
+<b>process_outcome_predictor.bin<b> file can be deployed directly on ESP32 to check the execution
 
 To test the sample code, reduce heap before calling the predict function. This will result in low score and heap alert.
 
