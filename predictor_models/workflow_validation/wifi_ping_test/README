@@ -1,0 +1,20 @@
+WiFi ping test with OTAinfo's predictor model
+
+
+Sample output:
+
+I (7934) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7944) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+I (9444) wifi:<ba-add>idx:0 (ifx:0, 56:ab:f8:52:6d:12), tid:0, ssn:0, winSize:64
+I (10464) esp_netif_handlers: sta ip: 192.168.0.157, mask: 255.255.255.0, gw: 192.168.0.1
+I (10464) ping_example: Connected to SSID: test_iot
+I (12464) main_task: Returned from app_main()
+I (12534) ping_example: 64 bytes from 8.8.8.8: icmp_seq=1 ttl=112 time=68 ms
+W (14464) ping_example: Request timeout for icmp_seq 2
+W (15464) ping_example: Request timeout for icmp_seq 3
+W (16464) ping_example: Request timeout for icmp_seq 4
+W (17464) ping_example: Request timeout for icmp_seq 5
+I (17464) ping_example: --- Ping statistics ---
+I (17464) ping_example: 5 packets transmitted, 1 received, 80% packet loss
+
+
