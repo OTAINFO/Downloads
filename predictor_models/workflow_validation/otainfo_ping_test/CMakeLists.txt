@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(otainfo_ping_test)
+idf_build_set_property(MINIMAL_BUILD ON)
+list(APPEND EXTRA_COMPONENT_DIRS "components/external_lib")
