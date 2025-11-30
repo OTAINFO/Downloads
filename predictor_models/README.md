@@ -25,8 +25,8 @@ Step2 - Sample for otainfo_predictor.h
 extern "C" {  
 #endif   
 typedef struct {  
-    int score;  
-    bool inadequate_on_cputemperature; 
+    int score;  // Inferense returns this score
+    bool inadequate_on_cputemperature;  //Compute this plus next three attributes and take corrective action, from edge, if needed
     bool insufficient_on_lbs; 
     bool insufficient_freeheap;  
     bool less_network_coverage;  
