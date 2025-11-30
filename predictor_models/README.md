@@ -1,4 +1,4 @@
-<b>Learn how to turn this model into a device-agnostic process-success predictor deployable on any CPU or MPU with TensorFlow Lite support</b> <br>
+<b>Learn how to turn this model into a device-agnostic process-success predictor deployable on any CPU or MCU with TensorFlow Lite support</b> <br>
 
 Step 1:
 ```
