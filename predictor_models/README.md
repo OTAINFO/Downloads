@@ -132,5 +132,5 @@ int predict(predictor_reply *preply){
 }
 ```
 
-Refer to [main.cc](https://github.com/OTAINFO/Downloads/blob/main/predictor_models/ESP-IDF/esp32/main/main.cc)
+Refer to [main.cc](https://github.com/OTAINFO/Downloads/blob/main/predictor_models/ESP-IDF/esp32/main/main.cc) on how to call your predictor
 
