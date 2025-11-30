@@ -112,7 +112,7 @@ int predict(predictor_reply *preply){
 // This is the sequence. The application need to load realtime values in its respective vairables
 //["battery_level","heap_largest_free_block", "free_heap_size", "wifi_rssi", "cpu_temperature", "is_charging" ]
 
-//make functions to load the 6 variables.
+//make functions using native library to load these 6 variables.
   input->data.f[0] = battery_level;  
   input->data.f[1] = heap_largest_free_block;
   input->data.f[2] = free_heap_size;
