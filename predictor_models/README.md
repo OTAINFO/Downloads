@@ -109,7 +109,7 @@ int model_setup() {
 }
 
 int predict(predictor_reply *preply){
-// This is the sequence. The application need to load realtime values in its respective vairables
+// This is the sequence. The application needs to load realtime values in its respective vairables using native functions.
 //["battery_level","heap_largest_free_block", "free_heap_size", "wifi_rssi", "cpu_temperature", "is_charging" ]
 
 //make functions using native library to load these 6 variables.
